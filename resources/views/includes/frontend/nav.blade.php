@@ -1,6 +1,9 @@
 <div class="top-left links">
   <a href="{{ url('/') }}">Home</a>
   <a href="{{ url('/features') }}">Features</a>
+  <a href="{{ url('/extras') }}">Extras</a>
+  <a href="{{ url('/pricing') }}">Pricing</a>
+  <a href="{{ url('/trial') }}">Trial</a>
 </div>
 @if (Route::has('login'))
 <div class="top-right links">

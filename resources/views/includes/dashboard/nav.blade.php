@@ -11,9 +11,15 @@
             </button>
 
             <!-- Branding Image -->
+            @guest
+            <a class="navbar-brand" href="{{ url('/') }}">
+                {{ config('app.name') }}
+            </a>
+                @else
             <a class="navbar-brand" href="{{ url('/dashboard') }}">
                 {{ config('app.name') }}
             </a>
+            @endguest
         </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">

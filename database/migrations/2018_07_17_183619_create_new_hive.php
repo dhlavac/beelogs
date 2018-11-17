@@ -18,7 +18,6 @@ class CreateNewHive extends Migration
             $table->increments('id');
             $table->string('hive_code');
             $table->string('apiary');
-            $tabel->string('')
             $table->rememberToken();
             $table->timestamps();
         });
