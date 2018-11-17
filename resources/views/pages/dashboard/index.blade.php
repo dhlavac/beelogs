@@ -1,5 +1,14 @@
 @extends('layouts.app')
 
+@section('head-title', 'Dashboard • ')
+
+@section('page-title', 'Dashboard')
+
+@section('breadcrumb')
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Dashboard</li>
+@endsection
+
 @section('content')<section class="content">
     <!-- Info boxes -->
     <div class="row">
@@ -8,7 +17,7 @@
                 <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">CPU Traffic</span>
+                    <span class="info-box-text">Apiaries</span>
                     <span class="info-box-number">90<small>%</small></span>
                 </div>
                 <!-- /.info-box-content -->
@@ -21,7 +30,7 @@
                 <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Likes</span>
+                    <span class="info-box-text">Hives</span>
                     <span class="info-box-number">41,410</span>
                 </div>
                 <!-- /.info-box-content -->
@@ -102,7 +111,7 @@
                         <!-- /.col -->
                         <div class="col-md-4">
                             <p class="text-center">
-                                <strong>Goal Completion</strong>
+                                <strong>Tasks</strong>
                             </p>
 
                             <div class="progress-group">
@@ -152,7 +161,7 @@
                         <div class="col-sm-3 col-xs-6">
                             <div class="description-block border-right">
                                 <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                                <h5 class="description-header">$35,210.43</h5>
+                                <h5 class="description-header">£35,210.43</h5>
                                 <span class="description-text">TOTAL REVENUE</span>
                             </div>
                             <!-- /.description-block -->
@@ -161,7 +170,7 @@
                         <div class="col-sm-3 col-xs-6">
                             <div class="description-block border-right">
                                 <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                                <h5 class="description-header">$10,390.90</h5>
+                                <h5 class="description-header">£10,390.90</h5>
                                 <span class="description-text">TOTAL COST</span>
                             </div>
                             <!-- /.description-block -->
@@ -170,7 +179,7 @@
                         <div class="col-sm-3 col-xs-6">
                             <div class="description-block border-right">
                                 <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                                <h5 class="description-header">$24,813.53</h5>
+                                <h5 class="description-header">£24,813.53</h5>
                                 <span class="description-text">TOTAL PROFIT</span>
                             </div>
                             <!-- /.description-block -->

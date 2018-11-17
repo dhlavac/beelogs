@@ -2,6 +2,7 @@
 
 return [
   'first-level' => [
+    'dashboard' => 'Dashboard',
     'apiaries' => 'Apiaries',
     'hives' => 'Hives',
     'colonies' => 'Colonies',
