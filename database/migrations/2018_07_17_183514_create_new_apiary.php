@@ -14,14 +14,15 @@ class CreateNewApiary extends Migration
     public function up()
     {
         //
-        Schema::create('apiaries', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('latitude');
-            $table->string('longitude');
-            $table->rememberToken();
-            $table->timestamps();
-        });
+        //Schema::create('apiaries', function (Blueprint $table) {
+        //    $table->increments('id');
+        //    $table->string('firstname');
+        //    $table->string('lastname');
+        //  $table->string('latitude');
+        //  $table->string('longitude');
+        //  $table->rememberToken();
+        //  $table->timestamps();
+        //});
     }
 
     /**

@@ -14,13 +14,13 @@ class CreateNewHive extends Migration
     public function up()
     {
         //
-        Schema::create('hives', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('hive_code');
-            $table->string('apiary');
-            $table->rememberToken();
-            $table->timestamps();
-        });
+        //Schema::create('hives', function (Blueprint $table) {
+        //    $table->increments('id');
+        //    $table->string('hive_code');
+        //    $table->string('apiary');
+        //    $table->rememberToken();
+        //    $table->timestamps();
+        //});
     }
 
     /**

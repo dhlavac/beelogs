@@ -47,7 +47,7 @@
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 @endif
             </div>
-            <div class="form-group {{ $errors->has('password') ? ' has-feedback' : '' }}">
+            <div class="form-group{{ $errors->has('password') ? ' has-feedback' : '' }}">
                 <input id="password" type="password" class="form-control" name="password" required>
 
                 @if ($errors->has('password'))
@@ -72,6 +72,7 @@
             </div>
         </form>
 
+        {{--
         <div class="social-auth-links text-center">
             <p>- OR -</p>
             <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
@@ -80,9 +81,10 @@
                 Google+</a>
         </div>
         <!-- /.social-auth-links -->
+        --}}
 
         <a href="{{ route('password.request') }}">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="{{ url('register') }}" class="text-center">Register a new membership</a>
 
     </div>
     <!-- /.login-box-body -->
