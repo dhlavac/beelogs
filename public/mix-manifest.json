@@ -1,6 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/fe-styles.css": "/css/fe-styles.css",
     "/css/app.css": "/css/app.css",
-    "/css/frontend.css": "/css/frontend.css",
-    "/css/dashboard.css": "/css/dashboard.css"
+    "/css/be-styles.css": "/css/be-styles.css"
 }

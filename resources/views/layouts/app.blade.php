@@ -1,43 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include('includes.dashboard.head')
+    @include('_partials.dashboard.head')
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
+            @include('_partials.dashboard.nav')
+        </nav>
 
-    @include('includes.dashboard.nav')
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                @yield('page-title')
-                <small>@yield('page-subtitle')</small>
-            </h1>
-            <ol class="breadcrumb">
-                @yield('breadcrumb')
-            </ol>
-        </section>
-
-        <!-- Main content -->
-        @yield('content')
+        <main class="py-4">
+            @yield('content')
+        </main>
     </div>
-    <!-- /.content-wrapper -->
-
-    @include('includes.dashboard.footer')
-
-    <!-- Control Sidebar -->
-    @include('includes.dashboard.right_sidebar')
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
-    <div class="control-sidebar-bg"></div>
-
-</div>
-<!-- ./wrapper -->
-
-@include('includes.dashboard.scripts')
 </body>
+<footer class="text-center">
+  <span class="float-left" style="padding-left: 15px;">&copy; <?php echo date ("Y"); ?> - 2019 BeeLogs. All rights reserved.</span><span class="float-right" style="padding-right: 15px;">Version: 0.1.0</span>
+</footer>
 </html>

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Mapper;
 
 class DashboardController extends Controller
 {
@@ -20,35 +19,20 @@ class DashboardController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
     {
         return view('pages.dashboard.index');
     }
 
-    public function apiaries()
-    {
-      return view('pages.dashboard.apiaries');
-    }
-
     public function createApiary()
     {
-      return view('pages.dashboard.create.apiary');
+       return view('pages.dashboard.create-apiary');
     }
 
-    public function hives()
+    public function comingSoon()
     {
-      return view('pages.dashboard.hives');
-    }
-
-    public function queens()
-    {
-      return view('pages.dashboard.queens');
-    }
-
-    public function createQueen()
-    {
-      return view('pages.dashboard.create.queen');
+       return view('pages.dashboard.coming-soon');
     }
 }

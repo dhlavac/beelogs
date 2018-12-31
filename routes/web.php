@@ -11,17 +11,14 @@
 |
 */
 
-Route::get('/', 'PagesController@index')->name('index');
-Route::get('/features', 'PagesController@features')->name('features');
-Route::get('/extras', 'PagesController@extras')->name('extras');
-Route::get('/pricing', 'PagesController@pricing')->name('pricing');
+Route::get('/', function () {
+    return view('pages.frontend.index');
+});
 
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-Route::get('/dashboard/apiaries', 'DashboardController@apiaries')->name('apiaries');
-Route::get('/dashboard/hives', 'DashboardController@hives')->name('hives');
-Route::get('/dashboard/queens', 'DashboardController@queens')->name('queens');
 
-Route::get('/dashboard/apiaries/create', 'DashboardController@createApiary')->name('createApiary');
-Route::get('/dashboard/queens/create', 'DashboardController@createQueen')->name('createQueen');
+Route::get('/create-apiary', 'DashboardController@createApiary')->name('create-apiary');
+
+Route::get('/coming-soon', 'DashboardController@comingSoon')->name('coming-soon');
