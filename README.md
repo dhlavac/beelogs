@@ -1,8 +1,8 @@
 # BeeLogs  
 BeeLogs is an open source beekeeping management system that helps beekeepers to better manage their colonies.  
-  
+
 ## Installation  
-  
+
 **Requirements**  
 - Git  
 - MySQL  
@@ -15,13 +15,13 @@ Once you've installed the required packages, follow these commands below to down
     rm -rf /var/www/html  
     cd /var/www  
     git clone https://github.com/beelogs/beelogs.git html  
-    
-    cp .env.example.env  
-    
+
+    cp .env.example .env  
+
     composer install  
     php artisan key:generate  
     php artisan migrate
-    
+
     cd /var/www
     chmod -R 777 html
     chown -R www-data:www-data html
