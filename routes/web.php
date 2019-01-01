@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
-Route::get('/create-apiary', 'DashboardController@createApiary')->name('create-apiary');
+Route::get('/dashboard/apiaries/create', 'DashboardController@createApiary')->name('create-apiary');
 
 Route::get('/coming-soon', 'DashboardController@comingSoon')->name('coming-soon');

@@ -22,7 +22,7 @@
                                     View Apiaries
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{ url('/create-apiary') }}">
+                                <a class="dropdown-item" href="{{ url('/dashboard/apiaries/create') }}">
                                     Create Apiary
                                 </a>
                             </div>
