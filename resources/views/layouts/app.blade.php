@@ -14,7 +14,5 @@
         </main>
     </div>
 </body>
-<footer class="text-center">
-  <span class="float-left" style="padding-left: 15px;">&copy; <?php echo date ("Y"); ?> - 2019 BeeLogs. All rights reserved.</span><span class="float-right" style="padding-right: 15px;">Version: 0.1.0</span>
-</footer>
+@include('_partials.dashboard.footer')
 </html>
