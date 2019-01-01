@@ -11,9 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js');
-
-mix.sass('resources/sass/frontend/fe-styles.scss', 'public/css');
-
-mix.sass('resources/sass/dashboard/app.scss', 'public/css');
-mix.sass('resources/sass/dashboard/be-styles.scss', 'public/css');
+mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/frontend/frontend-styles.scss', 'public/css')
+    .sass('resources/sass/dashboard/app.scss', 'public/css')
+    .sass('resources/sass/dashboard/dashboard-styles.scss', 'public/css');

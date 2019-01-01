@@ -15,4 +15,4 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/be-styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/dashboard-styles.css') }}" rel="stylesheet">

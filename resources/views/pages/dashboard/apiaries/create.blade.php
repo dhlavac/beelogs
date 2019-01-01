@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group create-apiary-description">
                         <label class="sr-only" for="apiartDescription">Apiary Description</label>
                         <textarea class="form-control" id="apiaryDescription" rows="3" placeholder="Description"></textarea>
                     </div>

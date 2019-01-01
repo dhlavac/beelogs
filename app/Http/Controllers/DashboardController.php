@@ -28,7 +28,7 @@ class DashboardController extends Controller
 
     public function createApiary()
     {
-       return view('pages.dashboard.create-apiary');
+       return view('pages.dashboard.apiaries.create');
     }
 
     public function comingSoon()
